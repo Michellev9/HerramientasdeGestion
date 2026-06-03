@@ -1,1 +1,2 @@
 # HerramientasdeGestion
+StarNutri es una aplicación móvil orientada a promover hábitos alimenticios saludables y mejorar la nutrición infantil mediante el uso de herramientas interactivas y educativas. El sistema está diseñado para apoyar tanto a niños como a padres, ofreciendo funcionalidades que facilitan el seguimiento nutricional, la consulta de información alimentaria y la motivación mediante elementos de gamificación.
