@@ -1,0 +1,298 @@
+<div class="stars-background">
+  <div class="stars-layer base"
+    [ngStyle]="{'transform': 'translate(' + mouseX * 0.01 + 'px, ' + mouseY * 0.01 + 'px)'}"></div>
+  <div class="stars-layer twinkling"
+    [ngStyle]="{'transform': 'translate(' + mouseX * 0.02 + 'px, ' + mouseY * 0.02 + 'px)'}"></div>
+  <div class="stars-layer moving"
+    [ngStyle]="{'transform': 'translate(' + mouseX * 0.035 + 'px, ' + mouseY * 0.035 + 'px)'}"></div>
+
+  <div *ngFor="let item of floatingItems" class="floating-item-wrapper" [ngStyle]="{
+         'top': item.currentTop + '%', 
+         'left': item.left + '%', 
+         'transform': 'translate(' + item.transformX + 'px, ' + item.transformY + 'px)'
+       }">
+    <div class="floating-item" [style.font-size]="item.size" [style.animation-delay]="item.delay">
+      {{ item.icon }}
+    </div>
+  </div>
+</div>
+
+
+<section id="inicio" class="hero glass">
+  <div class="hero-content">
+    <h1>StarNutri: Aprendizaje Nutricional Infantil</h1>
+    <p>La app que ayuda a los padres a monitorear la nutrición mientras los niños aprenden hábitos saludables jugando.
+    </p>
+
+    <div class="store-buttons">
+      <p>Disponible en Google Play</p>
+      <div class="btn-glow-wrapper">
+        <a href="https://play.google.com/store/apps" class="store-badge" target="_blank" rel="noopener">
+          <div class="btn-glow-content">
+            <img src="google.png" alt="Google Play">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="screen7.png" alt="StarNutri App">
+  </div>
+</section>
+
+<section id="perfiles" class="section profiles">
+  <div class="section-title-glass glass reveal">
+    <h1>Dos Perfiles, Una Solución Completa</h1>
+  </div>
+
+  <div class="profile-cards">
+    <article class="card glass profile-padres reveal">
+      <h3 class="card-title">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="icon-main" alt="">
+        Perfil de Padres
+      </h3>
+      <ul>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Formularios Semanales</strong>
+          <p>Registra fácilmente lo que tu hijo consume durante la semana</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Reportes Detallados</strong>
+          <p>Obtén análisis completos sobre los hábitos alimenticios</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Recomendaciones Personalizadas</strong>
+          <p>Recibe consejos nutricionales adaptados a tu hijo</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Alertas Nutricionales</strong>
+          <p>Notificaciones sobre deficiencias o excesos</p>
+        </li>
+      </ul>
+    </article>
+
+    <article class="card glass profile-ninos reveal">
+      <h3 class="card-title">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="icon-main" alt="">
+        Perfil de Niños
+      </h3>
+      <ul>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Juegos Educativos</strong>
+          <p>Minijuegos sobre nutrición y alimentación saludable</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Sistema de Recompensas</strong>
+          <p>Gana estrellas y medallas por buenos hábitos</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Lecciones Interactivas</strong>
+          <p>Aprende sobre nutrición de forma divertida</p>
+        </li>
+        <li><strong><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">Avatar Personalizable</strong>
+          <p>Crea y personaliza tu personaje</p>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="nosotros" class="section about">
+  <div class="about-grid glass reveal">
+    <div class="about-text reveal">
+      <h1>¿Qué es StarNutri?</h1>
+      <p>StarNutri es una aplicación móvil enfocada en el bienestar y la nutrición infantil, diseñada para ayudar a las
+        familias a desarrollar hábitos alimenticios saludables desde temprana edad.</p>
+      <p>Combina tecnología, educación y gamificación para convertir la nutrición en una experiencia positiva.</p>
+    </div>
+    <div class="about-image reveal">
+      <img src="logo.png" alt="Logo StarNutri">
+    </div>
+  </div>
+
+  <div class="about-grid glass reverse">
+    <div class="objective-image reveal">
+      <img src="objetivo.png" alt="Objetivo StarNutri">
+    </div>
+    <div class="about-text reveal">
+      <h2>Nuestro Objetivo</h2>
+      <p>Promover hábitos alimenticios saludables en niños mediante el seguimiento nutricional y el aprendizaje mediante
+        experiencias dinámicas.</p>
+      <p>Apoyar a las familias en la formación de hábitos positivos desde temprana edad, de manera divertida.</p>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" class="section how-it-works">
+  <div class="section-title-glass glass reveal">
+    <h1>¿Cómo funciona StarNutri?</h1>
+  </div>
+
+  <div class="steps">
+
+    <div class="step glass reveal">
+      <span>1</span>
+      <h4>Inicia sesión con Google</h4>
+      <p>Accede de forma rápida y segura utilizando tu cuenta de Google.</p>
+    </div>
+
+    <div class="step glass reveal">
+      <span>2</span>
+      <h4>Selecciona el perfil</h4>
+      <p>Elige el perfil que deseas utilizar dentro de la aplicación móvil.</p>
+    </div>
+
+    <div class="step glass reveal">
+      <span>3</span>
+      <h4>Registra alimentos y actividades</h4>
+      <p>Guarda fácilmente lo que consume tu hijo y las actividades que realiza cada día.</p>
+    </div>
+
+    <div class="step glass reveal">
+      <span>4</span>
+      <h4>Recibe recomendaciones personalizadas</h4>
+      <p>Obtén sugerencias nutricionales inteligentes para mejorar sus hábitos.</p>
+    </div>
+  </div>
+
+<div class="carousel reveal">
+  <div class="track">
+    <div class="carousel-card reveal" *ngFor="let screen of screensLoop">
+      <img [src]="screen.img" alt="">
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="planes" class="section plans">
+  <div class="section-title-glass glass reveal">
+    <h1>Elige el plan que mejor se adapte a tu familia</h1>
+  </div>
+
+  <div class="plan-cards">
+    <div class="card plan-gratuito glass reveal">
+      <h3>Plan Gratuito</h3>
+      <h4 class="price">$<span class="counter" data-target="0">0</span> MXN / mes</h4>
+      <p>Comienza con herramientas básicas.</p>
+      <ul>
+        <li>1 perfil de padres</li>
+        <li>1 perfil infantil</li>
+        <li>Plan básico</li>
+        <li>Juegos limitados</li>
+        <li class="no">Sin reportes detallados</li>
+        <li class="no">Sin recomendaciones personalizadas</li>
+      </ul>
+      <button class="btn-outline">Plan Actual</button>
+    </div>
+
+    <div class="card plan-premium glass reveal">
+      <h3>Plan Premium</h3>
+      <h4 class="price">$<span class="counter" data-target="69">0</span> MXN / mes</h4>
+      <p>Monitoreo y recomendaciones avanzadas.</p>
+      <ul>
+        <li>1 perfil padres</li>
+        <li>Hasta 3 perfiles infantiles</li>
+        <li>Recomendaciones personalizadas</li>
+        <li>Juegos avanzados</li>
+        <li class="no">Sin reportes muy detallados</li>
+      </ul>
+      <button class="btn-primary" (click)="irLogin()">Comenzar Ahora</button>
+    </div>
+
+    <div class="card plan-familiar glass reveal">
+      <h3>Plan Familiar</h3>
+      <h4 class="price">$<span class="counter" data-target="99">0</span> MXN / mes</h4> 
+      <p>Solución completa para toda la familia.</p>
+      <ul>
+        <li>Perfiles infantiles ilimitados</li>
+        <li>Varios perfiles padres</li>
+        <li>Reportes detallados</li>
+        <li>Seguimiento avanzado</li>
+        <li>Acceso total a juegos</li>
+      </ul>
+      <button class="btn-primary" (click)="irLogin()">Comenzar Ahora</button>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section contact">
+  <div class="contact-container glass">
+    <div class="contact-info reveal">
+      <h1>Contáctanos</h1>
+      <h2>¡Estamos para apoyarte!</h2>
+      <p>¿Tienes dudas? Nuestro equipo está listo para ayudarte. Completa el formulario y nos pondremos en contacto lo
+        antes posible.</p>
+
+      <div class="info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="">
+        <span>+52 123 456 7890</span>
+      </div>
+      <div class="info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="">
+        <span>Cuitlahuac, Veracruz</span>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" #contactNgForm="ngForm" (ngSubmit)="enviarMensaje(contactNgForm)">
+      <h2>Envíanos un mensaje</h2>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre completo"
+          required
+          ngModel
+          #nombreRef="ngModel"
+          [ngClass]="getInputClass(nombreRef)"
+        />
+        <small *ngIf="nombreRef.touched && nombreRef.invalid">El nombre es obligatorio</small>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          name="correo"
+          placeholder="Correo electrónico"
+          required
+          email
+          ngModel
+          #correoRef="ngModel"
+          [ngClass]="getInputClass(correoRef)"
+        />
+        <small *ngIf="correoRef.touched && correoRef.invalid">Correo inválido</small>
+      </div>
+
+      <div class="form-group">
+        <select
+          name="tipo"
+          required
+          ngModel
+          #tipoRef="ngModel"
+          [ngClass]="getInputClass(tipoRef)"
+        >
+          <option value="" disabled selected>Tipo de consulta</option>
+          <option>Padre de familia</option>
+          <option>Escuela / Institución</option>
+          <option>Soporte</option>
+          <option>Otro</option>
+        </select>
+        <small *ngIf="tipoRef.touched && tipoRef.invalid">Selecciona una opción</small>
+      </div>
+
+      <div class="form-group">
+        <textarea
+          rows="5"
+          name="mensaje"
+          placeholder="Escribe tu mensaje"
+          required
+          ngModel
+          #mensajeRef="ngModel"
+          [ngClass]="getInputClass(mensajeRef)"
+        ></textarea>
+        <small *ngIf="mensajeRef.touched && mensajeRef.invalid">El mensaje es obligatorio</small>
+      </div>
+
+      <button type="submit" class="btn-primary btn-enviar">Enviar mensaje</button>
+
+      <p class="feedback" *ngIf="mensajeEnviado">¡Mensaje enviado correctamente!</p>
+
+      <p class="feedback-error" *ngIf="mensajeError">{{ mensajeError }}</p>
+    </form>
+  </div>
+</section>
